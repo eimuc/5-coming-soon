@@ -1,0 +1,46 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+    .hero-row {
+        display: inline-block;
+        width: 600px;
+        margin-left: calc((100% - 600px) / 2);
+    }
+    .row {
+        display: inline-block;
+        width: 1000px;
+        margin-left: calc((100% - 1000px) / 2);
+    }
+        .left-column {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        }
+        .right-column {
+            display: inline-block;
+            width: 40%;
+            float: right;
+        }
+        .socials {
+            display: inline-block;
+            width: 100%;
+        }
+        .texts {
+            display: inline-block;
+            width: 600px;
+            margin-left: calc((100% - 600px) / 2);
+        }
+
+.bg-blue {
+    background-color: #03A9F4;
+}
+.hero-bg {
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
