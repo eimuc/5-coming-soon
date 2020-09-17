@@ -67,18 +67,87 @@
             .column-description {
                 margin-bottom: 30px;
             }
+    footer.container {
+        padding-top: 0;
+    }
         .socials {
             display: inline-block;
             width: 100%;
             float: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
             border-bottom: 1px solid #fff;
+            text-align: center;
         }
+            .socials > a {
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+                line-height: 20px;
+                width: 40px;
+                margin: 10px;
+            }
+                .socials > a:hover {
+                    background-color: #fff;
+                    color: #03A9F5;
+                    border-radius: 50%;
+                }
         .footer-texts {
             display: inline-block;
             width: 600px;
             float: left;
             margin-left: calc((100% - 600px) / 2);
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
         }
+            .footer-texts > .logo {
+                display: inline-block;
+                width: 100%;
+                height: 40px;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: 30px;
+            }
+            .copyright {
+                display: inline-block;
+            }
+                .copyright > .texts {
+                    display: inline-block;
+                    float: left;
+                }
+                    .copyright > .texts.borders {
+                        margin-left: 20px;
+                        margin-right: 20px;
+                        position: relative;
+                    }
+                    .copyright > .texts.borders::before {
+                        display: inline-block;
+                        content: '';
+                        width: 1px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        left: -9px;
+                        top: 6px;
+                    }
+                    .copyright > .texts.borders::after {
+                        display: inline-block;
+                        content: '';
+                        width: 1px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 6px;
+                        right: -9px;
+                    }
+            .footer-texts > p {
+
+            }
+            .footer-texts a {
+                color: #fff;
+            }
 
 @media (max-width: 1100px) {
     .row {
@@ -115,6 +184,16 @@
         width: 400px;
         margin-left: calc((100% - 400px) / 2);
     }
+        .copyright > .texts {
+            width: 100%;
+        }
+        .copyright > .texts.borders {
+            margin: 0;
+        }
+            .copyright > .texts.borders::before,
+            .copyright > .texts.borders::after {
+                display: none;
+            }
 }
 
 @media (max-width: 500px) {
