@@ -52,6 +52,7 @@
         display: inline-block;
         width: 1000px;
         margin-left: calc((100% - 1000px) / 2);
+        position: relative;
     }
         .left-column {
             width: 50%;
@@ -148,6 +149,11 @@
             .footer-texts a {
                 color: #fff;
             }
+        .back-to-top {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+        }
 
 @media (max-width: 1100px) {
     .row {
